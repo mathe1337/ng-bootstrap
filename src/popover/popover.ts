@@ -174,7 +174,7 @@ export class NgbPopover implements OnInit, OnDestroy, OnChanges {
   }
 
   constructor(
-      private _elementRef: ElementRef<HTMLElement>, private _renderer: Renderer2, injector: Injector,
+      public _elementRef: ElementRef<HTMLElement>, private _renderer: Renderer2, injector: Injector,
       componentFactoryResolver: ComponentFactoryResolver, viewContainerRef: ViewContainerRef, config: NgbPopoverConfig,
       private _ngZone: NgZone, @Inject(DOCUMENT) private _document: any, private _changeDetector: ChangeDetectorRef,
       applicationRef: ApplicationRef) {
